@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="project_todo.project_task_view_todo_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='user_ids']" position="after">
-                <field name="manager_ids" />
+                <field name="manager_ids" widget="many2many_avatar_user"/>
             </xpath>
         </field>
     </record>
