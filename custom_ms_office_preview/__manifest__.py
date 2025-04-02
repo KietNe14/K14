@@ -8,7 +8,7 @@
     It extends the attachment model to recognize Office file types and provides a seamless viewing experience 
     by embedding the Office Viewer in the file preview interface.
     """,
-    "depends": ["website"],
+    "depends": ["web"],
     "data": [
     ],
     "assets": {
