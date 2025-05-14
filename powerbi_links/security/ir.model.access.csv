@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_powerbi_link_garage,powerbi.link.garage,model_powerbi_link,powerbi_links.group_powerbi_garage,1,1,1,1
+access_powerbi_link_attendance,powerbi.link.attendance,model_powerbi_link,powerbi_links.group_powerbi_attendance,1,1,1,1
+
