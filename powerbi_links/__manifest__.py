@@ -14,8 +14,8 @@
     'category': 'Productivity',  # Phân loại module, ví dụ: Sales, Inventory, Reporting [5, 6]
     'depends': ['base', 'web'],  # Danh sách các module phụ thuộc. 'base' gần như luôn cần thiết. 'web' cần nếu có tương tác giao diện web phức tạp hoặc assets. [5, 6]
     'data': [
-        'security/ir.model.access.csv',
         'security/powerbi_security.xml',
+        'security/ir.model.access.csv',
         'views/powerbi_link_views.xml',
         'views/powerbi_link_menus.xml',
     ], # Danh sách các file XML, CSV được load. Thứ tự rất quan trọng. [5, 6, 7]

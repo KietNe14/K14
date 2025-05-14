@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="group_powerbi_garage" model="res.groups">
-        <field name="name">Power BI Garage</field>
+    <record id="group_powerbi_dashboard" model="res.groups">
+        <field name="name">Power BI Dashboard</field>
         <field name="category_id" ref="base.module_category_hidden"/>
     </record>
-    <record id="group_powerbi_attendance" model="res.groups">
-        <field name="name">Power BI Attendance</field>
-        <field name="category_id" ref="base.module_category_hidden"/>
-    </record>
-
-    <record id="powerbi_garage_rule" model="ir.rule">
-        <field name="name">Power BI Garage Rule</field>
-        <field name="model_id" ref="model_powerbi_link"/>
-        <field name="groups" eval="[(4, ref('powerbi_links.group_powerbi_garage'))]"/>
-        <field name="domain_force">[('type_dashboard', '=', 'garage')]</field>
-        <field name="perm_read" eval="1"/>
-        <field name="perm_write" eval="1"/>
-        <field name="perm_create" eval="1"/>
-        <field name="perm_unlink" eval="1"/>
-    </record>
-
-    <record id="powerbi_attendance_rule" model="ir.rule">
-        <field name="name">Power BI Attendance Rule</field>
-        <field name="model_id" ref="model_powerbi_link"/>
-        <field name="groups" eval="[(4, ref('powerbi_links.group_powerbi_attendance'))]"/>
-        <field name="domain_force">[('type_dashboard', '=', 'attendance')]</field>
-        <field name="perm_read" eval="1"/>
-        <field name="perm_write" eval="1"/>
-        <field name="perm_create" eval="1"/>
-        <field name="perm_unlink" eval="1"/>
-    </record>
-
 </odoo>
